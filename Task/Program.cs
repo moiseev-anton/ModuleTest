@@ -10,6 +10,18 @@ Clear();
 string[] example1 = { "hello", "2", "world", ":-)" };
 string[] example2 = { "1234", "1567", "-2", "computer science" };
 string[] example3 = { "Russia", "Denmark", "Kazan" };
+PrintArray(example1);
+Write(" -> ");
+PrintArray(GetFiltredArray(example1));
+WriteLine();
+PrintArray(example2);
+Write(" -> ");
+PrintArray(GetFiltredArray(example2));
+WriteLine();
+PrintArray(example3);
+Write(" -> ");
+PrintArray(GetFiltredArray(example3));
+
 
 // Нахождение размера итогового массива
 int GetLengthNewArray(string[] array)
