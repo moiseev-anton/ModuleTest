@@ -22,3 +22,21 @@ int GetLengthNewArray(string[] array)
 
     return counter;
 }
+
+// Формирование итогового массива
+string[] GetFiltredArray(string[] array)
+{
+    int length = GetLengthNewArray(array);
+
+    if (length == array.Length)
+        return array;
+
+    string[] result = new string[length];
+    int count = 0;
+
+    for (int i = 0; count < length; i++)
+        if (array[i].Length < 4)
+            result[count++] = array[i];
+
+    return result;
+}
