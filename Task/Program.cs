@@ -24,11 +24,11 @@ PrintArray(GetFiltredArray(example3));
 
 
 // Нахождение размера итогового массива
-int GetLengthNewArray(string[] array)
+int GetLengthNewArray(string[] arr)
 {
     int counter = 0;
 
-    foreach (string item in array)
+    foreach (string item in arr)
         if (item.Length < 4)
             counter++;
 
@@ -44,11 +44,10 @@ string[] GetFiltredArray(string[] array)
         return array;
 
     string[] result = new string[length];
-    int count = 0;
 
-    for (int i = 0; count < length; i++)
+    for (int i = 0, j = 0; j < length; i++)
         if (array[i].Length < 4)
-            result[count++] = array[i];
+            result[j++] = array[i];
 
     return result;
 }
