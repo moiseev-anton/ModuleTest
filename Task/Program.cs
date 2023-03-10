@@ -40,3 +40,9 @@ string[] GetFiltredArray(string[] array)
 
     return result;
 }
+
+// Вывод массива строк
+void PrintArray(string[] arr)
+{
+    Write($"[{String.Join(", ", arr)}]");
+}
